@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en/us/nl">
 
@@ -7,34 +8,78 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	 <!-- This wil scale the fontsize so high res mobile users won´t have to squint -->
 	 <link href="style.css" rel="stylesheet">
+	 <style>
+	 *{
+	 	margin: 0;
+	 	padding: 12px;
+
+	 }
+	 @import url('https://fonts.googleapis.com/css?family=Khula');
+
+	 html {
+	 	margin: 0;
+	 	padding: 0;
+	 }
+	 body {
+	 	width: 50%;
+	 	height: auto;
+	 	color: white;
+	 	background-color:#333;
+	 	margin-top: 15px;
+	 	padding: 5px;
+	 	font-family: 'Khula', sans-serif;
+	 	font-size: 12pt;
+	 	color: white;}
+
+	 div{
+	 	width: 50%;
+	 	height: auto;
+	 	margin-left: 15px;
+	 	padding: 15px;
+	 	background-color: #AC1032;
+	 	color: #FFFFFF;
+	 	font-family: 'Khula', sans-serif;
+	 	font-size: 12pt;}
+
+	 </style>
+
 
 <title>WoofMeow oefening in PHP</title>
+
 </head>
 <body>
-<div>
 
-	 <?php
-	 	 	var x= 1;
-	 			for (; $x < 101;){
-				document.write ( $x + ", ");
-				x++;
+	<div>
+<h3>Oefening in PHP -- WoofMeow</h3>
 
 
-				if ($x%15==0){
- 				    echo "WoofMeow<br>";
- }
- 				else if ($x%3==0){
- 				          echo "Woof<br>";
- }
- 				else if ($x%5==0){
- 				          echo "Meow<br>";
+<?php>
+
+	 $x= 0;
+		 for (; $x < 100;){
+		 $x++;
+
+		 if ($x%15==0){
+				 echo "WOOFMEOW<br />";
+		}
+		 else if ($x%3==0){
+							 echo "WOOF<br />";
+		}
+		 else if ($x%5==0){
+							 echo "MEOW<br />";
 }
-				else{
- 				           echo $x;}
- }
-?>
+else {
+	echo $x . "<br />";
 
+}
+}
+
+
+
+?>
 
 </div>
 </body>
+<footer><font size="1"><i class="fa fa-copyright" aria-hidden="true"></i> Rienk Bezema 2017 </font></footer>
+
 </html>
